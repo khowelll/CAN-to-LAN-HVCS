@@ -66,6 +66,7 @@ void loop() {
        server.println("Message Recieved");
      }
   */
+  currentMillis = millis();
   packetSize = Udp.parsePacket(); //read the packet size
 
   if (packetSize > 0) { //Check to see if there are bytes to read
